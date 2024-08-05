@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+}
+
+/* mise en forme du header */
+
+header{
+    color: orangered;
+}
+
+header h1{
+    font-size: 3em;
+}
+
+/* mise en forme du contenu main */
+
+main{
+    border: 2px solid orangered;
+    background-color: orangered;
+    margin: auto;
+    width: 700px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+section .text{
+    color: #fff;
+}
+
+section .proposition-list{
+    color: #fff;
+}
+
+.proposition-area{
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 70px;
+    border-radius: 10px;
+    font-size: 3.5em;
+    color: orangered;
+    font-weight: bold;
+}
+
+.game-area input{
+    width: 600px;
+    color: orangered;
+    font-weight: bold;
+}
+
+.game-area button{
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: orangered;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.game-area button:hover{
+    opacity: 0.8;
+}
+
+.game-area div{
+    color: rgb(194, 15, 15);
+}
+
+.score-area{
+    color: #fff;
+}
+
+.share-area a{
+    text-decoration: none;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: orangered;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.share-area a:hover{
+    opacity: 0.8;
+}
+
+/* mise en forme du footer */
+
+footer{
+    border: 2px solid orangered;
+    background-color: orangered;
+    color: #fff;
+}

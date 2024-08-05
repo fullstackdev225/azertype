@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AzerType - L'application pour écrire plus vite</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/config.js" defer></script>
+        <script src="js/script.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+         <header>
+              <h1>AzerType</h1>
+              <h2>L'application pour écrire plus vite !</h2>
+              <p>AzerType est une application pour écrire plus vite au clavier :)</p>
+         </header><br><br>
+
+         <main>
+            <section>
+                 <p class="text">Choisissez une proposition parmi celles qui s'affichent <br> ci-dessous</p>
+                 <div class="proposition-list">
+                    <input type="radio" name="proposition" id="word" value="word">
+                    <label for="word">Mots</label>
+                    <input type="radio" name="proposition" id="sentence" value="sentence">
+                    <label for="sentence">Phrases</label>
+                 </div><br>
+
+                 <div class="proposition-area"></div><br>
+
+                 <div class="game-area">
+                     <input type="text" name="user-proposition" id="user-proposition">
+                     <button id="validate-button">Valider</button>
+                     <div class="message"></div>
+                 </div><br>
+
+                 <div class="score-area">
+                     Votre score : <span>0</span>
+                 </div><br>
+
+                 <div class="share-area">
+                    <a href="#">Partager</a>
+                 </div>
+            </section>
+         </main><br><br>
+
+         <footer>
+             <p>@Copyright2024 - AzerType</p>
+         </footer>
+    </body>
+</html>
