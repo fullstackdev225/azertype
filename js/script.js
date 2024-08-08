@@ -11,6 +11,11 @@ function displayProposition(proposition){
     propositionArea.innerHTML = proposition;
 }
 
+function sendScore(name, email, score){
+    let mailto = `mailto:${email}?subject=Partage du score du jeu AzerType&body=Salut je me nomme ${name} et je voudrais partager avec toi le score que j'ai obtenu au jeu : ${score}`;
+    location.href = mailto;
+}
+
 
 function startGame(){
     let score = 0;
@@ -80,7 +85,22 @@ function startGame(){
         modal.close();
     });
 
-    
+    //sending score...
+    const form = document.querySelector(".modal-form");
 
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        let nameTag = document.getElementById("user-name");
+        let name = nameTag.value;
+
+        let emailTag = document.getElementById("user-email");
+        let email = emailTag.value;
+
+        let emailScore = `${score} / ${totalScore}`;
+
+        sendScore(name, email, emailScore);
+    });
+    
     displayScore(score, totalScore);
 }
