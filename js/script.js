@@ -91,12 +91,8 @@ function startGame(){
     form.addEventListener("submit", (event) => {
         event.preventDefault();
 
-        let nameTag = document.getElementById("user-name");
-        let name = nameTag.value;
-
-        let emailTag = document.getElementById("user-email");
-        let email = emailTag.value;
-
+        let name = document.getElementById("user-name").value;
+        let email = document.getElementById("user-email").value;
         let emailScore = `${score} / ${totalScore}`;
 
         sendScore(name, email, emailScore);
