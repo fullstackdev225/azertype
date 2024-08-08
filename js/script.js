@@ -66,5 +66,21 @@ function startGame(){
         displayProposition(proposition[i]);
     });
 
+    //opening dialog...
+    const shareButton = document.getElementById("share-button");
+    const modal = document.querySelector(".modal");
+
+    shareButton.addEventListener("click", () => {
+        modal.showModal();
+    });
+
+    //closing dialog...
+    const closeButton = document.getElementById("close-button");
+    closeButton.addEventListener("click", () => {
+        modal.close();
+    });
+
+    
+
     displayScore(score, totalScore);
 }

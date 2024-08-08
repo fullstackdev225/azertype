@@ -90,3 +90,43 @@ footer{
     background-color: orangered;
     color: #fff;
 }
+
+/* style of dialog */
+
+.modal{
+    text-align: center;
+    border: 2px solid orangered;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.modal h1{
+    color: #fff;
+}
+
+.modal label{
+    color: #fff;
+}
+
+.modal input{
+    width: 300px;
+    padding: 3px;
+    color: orangered;
+    font-weight: bold;
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.modal button{
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: orangered;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 300ms;
+}
+
+.modal button:hover{
+    opacity: 0.8;
+}

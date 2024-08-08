@@ -39,8 +39,26 @@
                      Votre score : <span>0</span>
                  </div><br>
 
+                 <dialog class="modal">
+                      <div class="btn-close">
+                          <button id="close-button">Fermer</button>
+                      </div>
+
+                      <h1>Partager votre score</h1>
+
+                      <form class="modal-form">
+                         <label for="user-name">Votre nom</label><br>
+                         <input type="text" name="user-name" id="user-name" required><br><br>
+
+                         <label for="user-email">A qui voulez-vous partager <br> votre score?</label><br>
+                         <input type="email" name="user-email" id="user-email" required><br><br>
+
+                         <button type="submit" id="send-button">Envoyer</button>
+                      </form>
+                 </dialog>
+
                  <div class="share-area">
-                    <a href="#">Partager</a>
+                    <a href="#" id="share-button">Partager</a>
                  </div>
             </section>
          </main><br><br>
