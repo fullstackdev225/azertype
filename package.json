@@ -1,0 +1,11 @@
+{
+  "name": "azertype",
+  "version": "1.0.0",
+  "description": "online app for write faster",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charles Potey",
+  "license": "ISC"
+}
