@@ -16,6 +16,24 @@ function displayError(error){
     errorMessage.innerHTML = error;
 }
 
+function emailVerification(email){
+    let regex = new RegExp("[a-z0-9._-]+@[a-z0-9._-]+\\.[a-z0-9._-]+");
+    let result = regex.test(email);
+
+    if(result){
+        return true;
+    }
+
+    return false;
+}
+
+function sendScore(email, name, score){
+    let mailto = `mailto:${email}?subject=Partage de score du jeu AzerType&body=Bonjour je me nomme ${name}
+ et je voudrais partager avec toi le score ${score} que j'ai obtenu à la fin du jeu.`;
+
+   location.href = mailto;
+}
+
 function gameStart(){
     //initializing variables...
     let score = 0;
@@ -66,12 +84,45 @@ function gameStart(){
             displayError("");
            }
 
+           //we stop the game...
         if(proposition[i] === undefined){
             displayProposition("Le jeu est terminé");
             buttonValidate.disabled = true;
             buttonShare.disabled = false;
         }
     });
+
+    //opening and closing dialog...
+    const buttonClose = document.getElementById("btn-close");
+    const modal = document.querySelector("dialog");
+
+    buttonShare.addEventListener("click", () => {
+        modal.showModal();
+    });
+
+    buttonClose.addEventListener("click", () => {
+        modal.close();
+    });
+
+    //we verify form...
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        let userName = document.getElementById("user-name").value;
+        let userEmail = document.getElementById("user-email").value;
+        let userScore = `${score} / ${totalScore}`;
+
+        if(emailVerification(userEmail)){
+           sendScore(userEmail, userName, userScore);
+           errorEmail.innerHTML = "";
+        }
+         else{
+            const errorEmail = document.querySelector(".email-error");
+            errorEmail.innerHTML = "Email invalid";
+         }
+    })
 
     displayScore(score, totalScore);
 }

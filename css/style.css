@@ -5,6 +5,19 @@ body{
     text-align: center;
 }
 
+.btn{
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: orangered;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 300ms;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
 /* header style */
 header{
     color: orangered;
@@ -49,38 +62,12 @@ section .game-area input{
     font-weight: bold;
 }
 
-section .game-area button{
-    border: 2px solid #fff;
-    background-color: #fff;
-    color: orangered;
-    font-weight: bold;
-    cursor: pointer;
-    transition: opacity 300ms;
-}
-
-section .game-area button:hover{
-    opacity: 0.8;
-}
-
 section .game-area .error-message{
     color: rgb(167, 16, 16);
 }
 
 section .score-area{
     color: #fff;
-}
-
-section .share-area button{
-    border: 2px solid #fff;
-    background-color: #fff;
-    color: orangered;
-    font-weight: bold;
-    cursor: pointer;
-    transition: opacity 300ms;
-}
-
-section .share-area button:hover{
-    opacity: 0.8;
 }
 
 /* footer style */
@@ -92,4 +79,33 @@ footer{
 
 footer p span{
     text-decoration: underline;
+}
+
+/* dialog style */
+dialog{
+    border: 2px solid orangered;
+    background-color: orangered;
+    border-radius: 10px;
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+}
+
+dialog h1{
+    color: #fff;
+}
+
+dialog form label{
+    color: #fff;
+}
+
+dialog form input{
+    width: 300px;
+    color: orangered;
+    font-weight: bold;
+    padding: 3px;
+}
+
+dialog form .email-error{
+    color: rgb(167, 16, 16);
 }
