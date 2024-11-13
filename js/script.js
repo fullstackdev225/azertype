@@ -77,6 +77,18 @@ function main(){
           }
     });
 
+    //opening and closing modal...
+    const modal = document.querySelector(".modal");
+    const buttonClose = document.getElementById("btn-close");
+
+    buttonShare.addEventListener("click", () => {
+        modal.showModal();
+    });
+
+    buttonClose.addEventListener("click", () => {
+        modal.close();
+    });
+
     //we display score...
     displayScore(score, totalScore);
 }
