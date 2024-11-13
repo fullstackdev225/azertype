@@ -106,3 +106,7 @@ body{
 .modal .form input{
     width: 300px;
 }
+
+.modal .form .error-email{
+    color: maroon;
+}
