@@ -84,3 +84,29 @@ body{
 .footer span{
     text-decoration: underline;
 }
+
+/* modal style */
+.modal{
+    text-align: center;
+    border: 2px solid orangered;
+    background-color: orangered;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.modal h1{
+    color: #fff;
+}
+
+.modal .form label{
+    color: #fff;
+}
+
+.modal .form input{
+    width: 300px;
+}
+
+.modal .form .error-email{
+    color: maroon;
+}
