@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.btn{
+    border: 2px solid #fff;
+    background-color: #fff;
+    cursor: pointer;
+    color: orangered;
+    font-weight: bold;
+    transition: opacity 350ms;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+/* header style */
+.header{
+   color: orangered;
+}
+
+.header .header-title{
+    font-size: 3em;
+}
+
+/* style of the main content */
+.section-game{
+    border: 2px solid orangered;
+    background-color: orangered;
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section-game p{
+    color: #fff;
+}
+
+.section-game .option-list label{
+    color: #fff;
+}
+
+.proposition-area{
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 70px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 3em;
+    color: orangered;
+    font-weight: bold;
+}
+
+.game-area input{
+    width: 600px;
+    color: orangered;
+    font-weight: bold;
+}
+
+.score-area{
+    color: #fff;
+}
+
+/* footer style */
+.footer{
+    border: 2px solid orangered;
+    background-color: orangered;
+}
+
+.footer .footer-text{
+    text-align: center;
+    color: #fff;
+}
+
+.footer span{
+    text-decoration: underline;
+}
