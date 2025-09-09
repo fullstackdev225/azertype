@@ -1,0 +1,44 @@
+section{
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    border-radius: 5px;
+
+    p{
+        color: $color-tertiary;
+    }
+
+    .proposition-lists{
+        label{
+            color: $color-tertiary;
+        }
+    }
+
+    .proposition-area{
+        border: 2px solid $color-tertiary;
+        background-color: $color-tertiary;
+        border-radius: 5px;
+        padding: 80px;
+        width: 70%;
+        margin: auto;
+        font-size: 3em;
+        color: $color-primary;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .game-area{
+        input{
+            width: 80%;
+            color: $color-primary;
+            font-weight: bold;
+            padding: 3px;
+        }
+    }
+
+    .score-area{
+        color: $color-tertiary;
+    }
+}

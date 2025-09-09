@@ -1,0 +1,15 @@
+@mixin button-style($color-default: $color-secondary){
+    border: 2px solid $color-default;
+    background-color: $color-default;
+    padding: 5px;
+    border-radius: 2px;
+    color: $color-tertiary;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 350ms;
+}
+
+@mixin button-hover($color-default: $color-secondary){
+    border-color: darken($color-default, 10);
+    background-color: darken($color-default, 10);
+}

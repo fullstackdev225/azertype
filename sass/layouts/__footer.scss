@@ -1,0 +1,15 @@
+.footer{
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+    color: $color-tertiary;
+
+    &__text{
+        text-align: center;
+
+        span{
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}
