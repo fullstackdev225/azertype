@@ -41,4 +41,10 @@ section{
     .score-area{
         color: $color-tertiary;
     }
+
+    .share-area{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
 }
