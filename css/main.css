@@ -21,6 +21,25 @@ body {
   background-color: rgb(204, 55.2, 0);
 }
 
+.modal {
+  border: 2px solid rgb(11, 65, 172);
+  background-color: rgb(11, 65, 172);
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+}
+.modal h1 {
+  color: #fff;
+}
+.modal .form label {
+  color: #fff;
+}
+.modal .form input {
+  width: 500px;
+  color: rgb(11, 65, 172);
+  font-weight: bold;
+}
+
 .header {
   color: rgb(11, 65, 172);
 }

@@ -12,6 +12,27 @@ function displayProposition(proposition){
 }
 
 
+function emailValidation(email){
+    let regex = new RegExp("[a-z0-9._-]@+[a-z0-9._-]+\\.[a-z0-9._-]+");
+
+    let result = regex.test(email);
+
+    if(result){
+        return true;
+    }
+     else{
+        return false;
+     }
+}
+
+
+function sendScore(email, name, score){
+    let mailto = `mailto:${email}?subject=Partage de score&body=Je me nomme ${name} et je voudrais partager le score ${score} que j'ai obtenu a la fin du jeu`;
+    location.href = mailto;
+}
+
+
+
 function main(){
     //Initialisations de variables...
     let i = 0;
@@ -67,6 +88,41 @@ function main(){
              shareButton.style.display = 'flex';
           }
     })
+
+    //ouverture et fermeture de la boite de dialog...
+    const buttonCloseModal = document.getElementById('btn-close');
+    const modal = document.querySelector('.modal');
+
+    shareButton.addEventListener('click', () => {
+        modal.showModal();
+    });
+
+    buttonCloseModal.addEventListener('click', () => {
+        modal.close();
+    });
+
+    //traitement de l'envoi des donnees du formulaire...
+    const form = document.querySelector('.form');
+    
+    form.addEventListener('submit', (event) => {
+        //stop de le comportement par defaut...
+        event.preventDefault();
+
+        //on recupere les donnees de l'utilisateur...
+        const userName = document.getElementById('name').value;
+        const userEmail = document.getElementById('email').value;
+        const userScore = `${score} / ${totalScore}`;
+
+        //on verifie si l'email est valide...
+        if(emailValidation(userEmail)){
+            //on envoie le score...
+            sendScore(userEmail, userName, userScore);
+        }
+         else{
+            //mesage d'erreur...
+            alert('Entrez une adresse e-mail valide');
+         }
+    });
 
     //Affichage du score...
     displayResult(score, totalScore);
