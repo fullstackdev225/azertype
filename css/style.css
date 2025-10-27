@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.btn{
+    border: 2px solid rgb(11, 89, 199);
+    background-color: rgb(11, 89, 199);
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: all 350ms;
+}
+
+.btn:hover{
+    border-color: rgb(17, 89, 189);
+    background-color: rgb(18, 98, 210);
+}
+
+/* header style */
+
+.header{
+    color: orangered;
+}
+
+.header .header-title{
+    font-size: 3em;
+}
+
+/* content style */
+
+.section-game{
+    border: 2px solid orangered;
+    background-color: orangered;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    width: 70%;
+}
+
+.section-game p{
+    color: white;
+}
+
+.section-game .proposition-lists label{
+    color: white;
+}
+
+.section-game .proposition-area{
+    border: 2px solid white;
+    background-color: white;
+    padding: 80px;
+    text-align: center;
+    color: orangered;
+    font-weight: bold;
+    font-size: 3em;
+    border-radius: 10px;
+}
+
+.section-game .game-area input{
+    outline: none;
+    width: 800px;
+    padding: 5px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.section-game .game-area input:focus{
+    border: 2px solid rgb(11, 89, 199);
+}
+
+.section-game .score-area{
+    color: white;
+}
+
+.section-game .share-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer style */
+
+.footer{
+    text-align: center;
+    color: white;
+    border: 2px solid orangered;
+    background-color: orangered;
+}
+
+.footer span{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+}
