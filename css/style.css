@@ -96,3 +96,31 @@ body{
     text-transform: uppercase;
     font-weight: bold;
 }
+
+/* modal style */
+
+.modal{
+    border: 2px solid orangered;
+    background-color: orangered;
+    padding: 30px;
+    text-align: center;
+}
+
+.modal h1{
+    color: white;
+}
+
+.modal .form .form-label{
+    color: white;
+}
+
+.modal .form .form-input{
+    width: 500px;
+    padding: 3px;
+    color: orangered;
+    font-weight: bold;
+}
+
+.modal .form .form-input:focus{
+    border: 2px solid rgb(18, 98, 210);
+}
