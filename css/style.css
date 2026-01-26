@@ -67,6 +67,12 @@ section .score-area{
     color: #fff;
 }
 
+section .share-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* footer style */
 footer{
