@@ -90,3 +90,27 @@ footer span{
     font-weight: bold;
     font-style: italic;
 }
+
+/* dialog style */
+dialog{
+    border: 2px solid orangered;
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+dialog h1{
+    color: #fff;
+}
+
+dialog form label{
+    color: #fff;
+}
+
+dialog form input{
+    width: 500px;
+    padding: 3px;
+    color: orangered;
+    font-weight: bold;
+}
