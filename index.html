@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>AzerType - L'application en ligne pour recopier</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+       <header>
+            <h1>AzerType</h1>
+            <h2>L'application pour écrire plus vite !</h2>
+            <p>AzerType est une application en ligne qui permet de recopier des propositions :)</p>
+       </header><br><br>
+
+       <main>
+            <section class="game-section">
+                <p>
+                    Choisissez une option parmi celles qui s'affichent <br> ci-dessous
+                </p>
+                <div class="proposition-lists">
+                    <input type="radio" name="option" id="word" value="word">
+                    <label for="word">Mots</label>
+                    <input type="radio" name="option" id="sentence" value="sentence">
+                    <label for="sentence">Phrases</label>
+                </div><br>
+
+                <div class="proposition-area">
+                </div><br>
+
+                <div class="input-area">
+                    <input type="text" name="user-proposition" id="user-proposition">
+                    <button id="btn-validate">Valider</button>
+                </div><br>
+
+                <div class="score-area">
+                    Votre score : <span>0</span>
+                </div><br>
+
+                <div class="share-area">
+                    <button id="btn-share">Partager</button>
+                </div>
+            </section><br><br>
+       </main>
+
+       <footer>
+            <p>copyright@2026 - AzerType made by : <span>Digital Services</span></p>
+       </footer>
+    </body>
+</html>
