@@ -102,3 +102,27 @@ footer p span{
     font-style: italic;
     font-weight: bold;
 }
+
+/* dialog style */
+
+.modal{
+    border: 2px solid orangered;
+    background-color: orangered;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal h1{
+    color: #fff;
+}
+
+.modal label{
+    color: white;
+}
+
+.modal input{
+    width: 500px;
+    color: orangered;
+    font-weight: bold;
+}
