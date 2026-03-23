@@ -73,6 +73,12 @@ header h1{
     color: #fff;
 }
 
+.section-game .share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* footer style */
 
 footer{
@@ -80,4 +86,28 @@ footer{
     background-color: orangered;
     text-align: center;
     color: #fff;
+}
+
+/* modal style */
+
+.modal{
+    border: 2px solid orangered;
+    background-color: orangered;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.modal h1{
+    color: #fff;
+}
+
+.modal form label{
+    color: #fff;
+}
+
+.modal form input{
+    width: 500px;
+    color: orangered;
+    font-weight: bold;
 }

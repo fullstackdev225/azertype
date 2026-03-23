@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <title>AzerType - L'application pour écrire plus vite</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/config.js" defer></script>
+        <script src="js/script.js" defer></script>
+        <script src="js/main.js" defer></script>
     </head>
 
     <body>
@@ -38,8 +41,22 @@
                     Votre score : <span>0</span>
                 </div><br>
 
+                <dialog class="modal">
+                    <button id="btn-close-modal">Fermer</button><br><br>
+                    <h1>Partager votre score</h1>
+                    <form>
+                        <label for="name">Veuillez entrer votre nom</label><br>
+                        <input type="text" name="name" id="name" required minlength="2" placeholder="Votre nom"><br><br>
+
+                        <label for="mail">A qui voulez-vous envoyez <br>votre score?</label><br>
+                        <input type="email" name="mail" id="mail" required placeholder="utilisateur@domaine.com"><br><br>
+
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </dialog>
+
                 <div class="share">
-                    <button id="btn-share">Partager</button>
+                    <button id="btn-share">Partager votre score</button>
                 </div>
             </section>
         </main><br><br>
