@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AzerType - L'aaplication pour apprendre à saisir des mots</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <h1 class="header-title">AzerType</h1>
+            <h2 class="header subtitle">L'application pour apprendre à taper des mots au clavier !</h2>
+            <p class="header-text">
+                AzerType est une application en ligne permettant aux utilisateur d'apprendre à saisi de des mots ou des phrases
+                au clavier:)
+            </p>
+        </header><br><br>
+
+        <main>
+            <section class="game-section">
+                 <p>
+                    Choisissez une option parmi celles qui s'affichent <br>
+                    ci-dessous.
+                 </p>
+
+                 <div class="option-lists">
+                    <input type="radio" name="option" id="word">
+                    <label for="word">Mots</label>
+                    <input type="radio" name="option" id="sentence">
+                    <label for="sentence">Phrases</label>
+                 </div><br>
+
+                 <div class="proposition-area">
+                 </div><br>
+
+                 <div class="user-area">
+                    <label for="user-proposition">Saisissez la proposition :</label>
+                    <input type="text" name="user-proposition" id="user-proposition">
+                    <button id="btn-validate">Valider</button>
+                 </div><br>
+
+
+                 <div class="score-area">
+                    Votre score : <span>0</span>
+                 </div><br>
+
+                 <div class="score-share">
+                    <button id="btn-share">Partager</button>
+                 </div>
+            </section>
+        </main><br><br>
+
+        <footer class="footer">
+            <p class="footer-text">@copyright - AzerType@2026 Tous droits reservés.</p>
+        </footer>
+    </body>
+</html>
