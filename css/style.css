@@ -91,3 +91,32 @@ button:hover{
     background-color: rgb(10, 48, 163);
     color: #fff;
 }
+
+/* dialog style */
+
+.modal{
+    text-align: center;
+    border: 2px solid rgb(10, 48, 163);
+    background-color: rgb(10, 48, 163);
+    padding: 25px;
+}
+
+.modal h1{
+    color: #fff;
+}
+
+.modal form label{
+    color: #fff;
+}
+
+.modal form input{
+    width: 500px;
+    padding: 3px;
+    outline: none;
+    color: rgb(10, 48, 163);
+    font-weight: bold;
+}
+
+.modal form input:focus{
+    border: 2px solid yellowgreen;
+}
