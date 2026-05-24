@@ -79,6 +79,11 @@ button:hover{
     color: #fff;
 }
 
+.score-share{
+    display: flex;
+    justify-content: center;
+}
+
 /* footer */
 
 .footer{
